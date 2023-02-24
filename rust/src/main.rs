@@ -1,5 +1,3 @@
-mod guessing_game;
+mod variables_and_mutability;
 
-fn main() {
-    guessing_game::game()
-}
+fn main() {}
