@@ -22,4 +22,17 @@ fn main() {
         result = num3;
     }
     println!("{}", result);
+    conditional()
+}
+
+fn conditional() {
+    let num: i32 = 3;
+
+    let number: &str = if num > 3 {
+        "More then 3"
+    } else {
+        "No more than 3"
+    };
+
+    println!("{}", number)
 }
