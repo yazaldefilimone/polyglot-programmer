@@ -6,3 +6,14 @@ fn main() {
     }
     println!("LIFTOFF")
 }
+
+fn while_test_2() {
+    let elements: [i32; 5] = [10, 20, 30, 40, 50];
+
+    let mut index: usize = 0;
+
+    while index < 5 {
+        println!("index: {}, value: {}", index, elements[index]);
+        index = index + 1
+    }
+}
