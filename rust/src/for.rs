@@ -4,4 +4,12 @@ fn main() {
     for element in elements.iter() {
         println!("{}", element)
     }
+    rev()
+}
+
+fn rev() {
+    for numero in (1..4).rev() {
+        println!("{}!", numero);
+    }
+    println!("LIFTOFF!!!");
 }
