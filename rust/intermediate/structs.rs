@@ -4,6 +4,10 @@ struct User {
     sign_inc_count: u64,
     active: bool,
 }
+struct UserBasic {
+    email: String,
+    username: String,
+}
 fn main() {
     let user: User = return_an_struct();
 
@@ -11,6 +15,19 @@ fn main() {
         "email:{}, username:{},sign:{}, active: {}",
         user.email, user.username, user.sign_inc_count, user.active
     );
+
+    let user_assign_with_basic: User = User {
+        active: true,
+        sign_inc_count: 1,
+        ..user
+    };
+
+    let user_builded: UserBasic = build_user(
+        user_assign_with_basic.username,
+        user_assign_with_basic.email,
+    );
+    print!("{}", user_builded.email);
+    print!("{}", user_builded.username);
 }
 
 fn return_an_struct() -> User {
@@ -21,5 +38,10 @@ fn return_an_struct() -> User {
         active: false,
     };
 
+    user
+}
+
+fn build_user(username: String, email: String) -> UserBasic {
+    let user: UserBasic = UserBasic { username, email };
     user
 }
