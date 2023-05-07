@@ -7,7 +7,10 @@
 (def rationalNumber 1/3)
 (def is true)
 (def isNot false)
+(def iamNull nil)
 
 (println rationalNumber)
 (println is)
 (println isNot)
+(println (str "= iamNull isNot: " (= iamNull isNot)))
+(println (str "! iamNull isNot: " (! iamNull isNot)))
