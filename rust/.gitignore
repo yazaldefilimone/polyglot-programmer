@@ -1,4 +1,4 @@
-/src/**/*.rs
+/src/**/main.rs
 /src/main
 target
 
