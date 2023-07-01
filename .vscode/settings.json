@@ -8,5 +8,8 @@
     ".prettierrc": "json",
     "ostream": "cpp",
     "random": "cpp"
-  }
+  },
+  "rust-analyzer.linkedProjects": [
+    "./rust/pratices/primitives-problem/Cargo.toml"
+  ]
 }
