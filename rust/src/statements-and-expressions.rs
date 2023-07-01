@@ -18,14 +18,13 @@ fn multiply_both(x: f64, y: f64) -> f64 {
     x * y // automantically return
 }
 
-fn conditionals(cats: i32) -> String {
-    let message = if cats > 1_00 {
+fn conditionals(cats: i32) -> &'static str {
+    let message: &str = if cats > 1_00 {
         "To many cats!"
     } else if cats > 1 {
         "Multiple cats!"
     } else {
         "Need more cats!"
     };
-
     message
 }
