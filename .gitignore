@@ -1,3 +1,7 @@
 .lsp
 .clj***
 */**.out
+*/src/**/main.rs
+*/**/*/main
+target
+
