@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
   int b = 10, c = 20;
 
   if (b < 0 && c > 10)
@@ -19,3 +18,6 @@ int main()
     }
   }
 }
+
+
+
